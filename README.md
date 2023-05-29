@@ -15,6 +15,7 @@ from transformers.pipelines import pipeline
 
 pipe = pipeline(model="KELONMYOSA/wav2vec2-xls-r-300m-emotion-ru", trust_remote_code=True)
 
+# The pipeline input can be a file, path or link
 result = pipe("speech.wav")
 print(result)
 ```
